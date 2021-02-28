@@ -98,7 +98,7 @@ function App() {
   };
 
   const deletePlayer = (id) => {
-    axios.delete(`http://localhost:3001/delete/${id}`).then(() => {
+    axios.delete(`https://cc-assignment-2-mern.herokuapp.com/delete/${id}`).then(() => {
       setplayerlist(playerlist.filter((val) => {
         return val._id != id;
       })
