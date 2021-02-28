@@ -107,7 +107,7 @@ function App() {
   };
 
   useEffect(() =>{
-    axios.get('http://localhost:3001/read', {
+    axios.get('https://cc-assignment-2-mern.herokuapp.com/read', {
     }).then((response) => {
       setplayerlist(response.data)
       // const update = prompt("Enter val: ");
